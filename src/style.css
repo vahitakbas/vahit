@@ -1,0 +1,172 @@
+body {
+  background: #fff;
+}
+
+.list {
+    box-sizing: border-box;
+    margin-bottom: 2vh;
+    margin: 0 auto;
+    max-width: 1200px;  
+    display: -webkit-box;
+    overflow-x: auto;
+ 
+}
+
+.list-item {
+ 
+  width: 170px;
+  height: 50px;
+  border: darkblue solid;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+.list-img {
+  width: 30%;
+  height: 80%;
+  float: left;
+  padding: 5px;
+
+}
+
+.list-text {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 50px;
+}
+
+.slide-container {
+    width: 70%;
+    margin: auto; }
+  
+  h3 {
+    text-align: center; }
+  
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+  
+  .each-fade {
+    display: flex;
+  }
+  
+  .each-fade .image-container {
+    width: 75%;
+    overflow: hidden;
+  }
+  
+  .each-fade .image-container img {
+    width: 100%;
+  }
+  
+  .each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+
+  .logo {
+    width: 81px;
+    height: 41px;
+  }
+  
+  .personheight {
+    display: flex;
+  }
+  
+  .logoImg {
+    padding-left: 60px !important;
+  }
+  
+  .profileBtn {
+    padding-left: 10px;
+  }
+  
+  .girisbtn {
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 40px;
+    color: #fff;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    justify-content: center;
+    outline: none;
+    padding: 7px 10px;
+    width: 100px;
+    height: 39px;
+    float: right;
+    font-family: 'Helvetica';
+  }
+  
+  .personbtn {
+    align-items: center;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 19px;
+    height: 40px;
+    justify-content: center;
+    margin-left: 5px;
+    outline: none;
+    position: relative;
+    width: 40px;
+  }
+  .logoafterdiv {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1120px !important;
+    max-height: 40.5px;
+    width: 100%;
+    max-width: unset;
+  }
+  
+  .footerBar {
+    border: solid #eceeef;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 75px;
+    line-height: 60px;
+  }
+  
+  .footerLogo {
+    height: 70px;
+  }
+  
+  .kesfet {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  
+  .dahaCuzdan {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  
