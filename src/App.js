@@ -1,5 +1,6 @@
 import ProductList from "./breadcrump";
 import Product from "./content";
+import Detail from "./detail";
 import "./style.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -33,6 +34,9 @@ function App() {
       </div>
       <div className="slide-container">
       <Product />
+      </div>
+      <div className="slide-container">
+      <Detail />
       </div>
       <div className="container-fluid">
         <div className="row footerBar col-md-12">
