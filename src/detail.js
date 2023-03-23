@@ -5,7 +5,7 @@ export default function Detail() {
   const [products, setProducts] = useState([]);
   const fetchProducts = () => {
     axios({
-      url: "https://api.extrazone.com/promotions?Id=33",
+      url: "https://api.extrazone.com/promotions?Id=61",
       method: "get",
       headers: {
         "X-Country-Id ": "TR",

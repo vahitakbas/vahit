@@ -2,6 +2,10 @@ body {
   background: #fff;
 }
 
+.App {
+  height: 100%;
+}
+
 .list {
   box-sizing: border-box;
   margin-bottom: 2vh;
@@ -11,10 +15,14 @@ body {
   overflow-x: auto;
 }
 
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
 .list-item {
   width: 170px;
   height: 50px;
-  border: darkblue solid;
+  border: 1.5px solid #eceeef;
   border-radius: 10px;
   text-align: center;
   margin: 5px;
@@ -35,8 +43,17 @@ body {
   line-height: 50px;
 }
 
+.container-fluid {
+  bottom: 0;
+  position: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
 .slide-container {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
@@ -45,11 +62,15 @@ h3 {
 }
 
 .each-slide > div {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 300px;
+  height: 6200px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-top: 40px;
 }
 
 .each-slide span {
@@ -60,16 +81,25 @@ h3 {
 }
 
 .each-fade {
-  display: flex;
+  width: 75%;
+  text-align: center;
 }
 
 .each-fade .image-container {
   width: 100%;
   overflow: hidden;
+  height: 425px;
 }
 
 .each-fade .image-container img {
-  width: 100%;
+  width: 98%;
+  height: 360px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 .each-fade h2 {
@@ -170,14 +200,12 @@ h3 {
 
 .photoBackground {
   background-color: #ffffff;
-  /* border: 1.5px solid #eceeef; */
-  border: 1.5px solid #000;
+  border: 1.5px solid #eceeef;
   border-radius: 20px;
-}
-
-.photo {
-  width: 200px;
-  height: 100px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  height: 540px;
 }
 
 .indicators {
@@ -192,12 +220,224 @@ h3 {
 .photoDate {
   background: #1d1e1c;
   border-radius: 26.8182px;
-}
-
-.dateText {
+  color: #ffffff;
+  text-align: center;
+  width: 80px;
+  z-index: 2;
+  margin-right: 10px;
+  position: relative;
+  top: -80px;
+  float: right;
   font-family: "Helvetica";
   font-style: normal;
-  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
 }
 
-.react-slideshow-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}.react-slideshow-container .nav{z-index:10;position:absolute;cursor:pointer}.react-slideshow-container .nav:first-of-type{left:0}.react-slideshow-container .nav:last-of-type{right:0}.react-slideshow-container .default-nav{height:30px;background:rgba(255,255,255,0.6);width:30px;border:0;text-align:center;color:#fff;border-radius:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.react-slideshow-container .default-nav:hover,.react-slideshow-container .default-nav:focus{background:#fff;color:#666;outline:0}.react-slideshow-container .default-nav.disabled:hover{cursor:not-allowed}.react-slideshow-container .default-nav:first-of-type{margin-right:-30px;border-right:0;border-top:0}.react-slideshow-container .default-nav:last-of-type{margin-left:-30px}.react-slideshow-container+ul.indicators{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:20px}.react-slideshow-container+ul.indicators li{display:inline-block;position:relative;width:7px;height:7px;padding:5px;margin:0}.react-slideshow-container+ul.indicators .each-slideshow-indicator{border:0;opacity:.25;cursor:pointer;background:transparent;color:transparent}.react-slideshow-container+ul.indicators .each-slideshow-indicator:before{position:absolute;top:0;left:0;width:7px;height:7px;border-radius:50%;content:'';background:#000;text-align:center}.react-slideshow-container+ul.indicators .each-slideshow-indicator:hover,.react-slideshow-container+ul.indicators .each-slideshow-indicator.active{opacity:.75;outline:0}.react-slideshow-fadezoom-wrapper{width:100%;overflow:hidden}.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap>div{position:relative;opacity:0}.react-slideshow-wrapper .react-slideshow-fade-images-wrap>div[aria-hidden='true']{display:none}.react-slideshow-wrapper.slide{width:100%;overflow:hidden}.react-slideshow-wrapper .images-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.react-slideshow-wrapper .images-wrap>div[aria-hidden='true']{display:none}
+.photoIcons {
+  width: 50px !important;
+  position: relative;
+  z-index: 2;
+  top: -45px !important;
+  height: 50px !important;
+}
+
+.photoIcon {
+  width: 50px;
+  position: relative;
+}
+
+.photoText {
+  position: relative;
+  z-index: 2;
+  top: -45px !important;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.react-slideshow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.react-slideshow-container .nav {
+  position: absolute;
+  cursor: pointer;
+}
+.react-slideshow-container .nav:first-of-type {
+  left: 0;
+}
+.react-slideshow-container .nav:last-of-type {
+  right: 0;
+}
+.react-slideshow-container .default-nav {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 30px;
+  border: 0;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.react-slideshow-container .default-nav:hover,
+.react-slideshow-container .default-nav:focus {
+  background: #fff;
+  color: #666;
+  outline: 0;
+}
+.react-slideshow-container .default-nav.disabled:hover {
+  cursor: not-allowed;
+}
+.react-slideshow-container .default-nav:first-of-type {
+  margin-right: -30px;
+  border-right: 0;
+  border-top: 0;
+}
+.react-slideshow-container .default-nav:last-of-type {
+  margin-left: -30px;
+}
+.react-slideshow-container + ul.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.react-slideshow-container + ul.indicators li {
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  padding: 5px;
+  margin: 0;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator {
+  border: 0;
+  opacity: 0.25;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  content: "";
+  background: #000;
+  text-align: center;
+}
+.react-slideshow-container + ul.indicators .each-slideshow-indicator:hover,
+.react-slideshow-container + ul.indicators .each-slideshow-indicator.active {
+  opacity: 0.75;
+  outline: 0;
+}
+.react-slideshow-fadezoom-wrapper {
+  width: 100%;
+  overflow: hidden;
+  text-align: -webkit-center;
+}
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap > div {
+  position: relative;
+  opacity: 0;
+}
+.react-slideshow-wrapper
+  .react-slideshow-fade-images-wrap
+  > div[aria-hidden="true"] {
+  display: none;
+}
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden;
+}
+.react-slideshow-wrapper .images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.react-slideshow-wrapper .images-wrap > div[aria-hidden="true"] {
+  display: none;
+}
+
+.dahaBtn {
+  background-color: red;
+}
+
+.detailsicon {
+  width: 60px !important;
+  z-index: 2;
+  position: relative;
+  top: -45px;
+  float: left;
+  padding-left: 20px;
+}
+
+.detailsphoto {
+  position: relative;
+}
+
+.detailstitle {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.detailsdescription {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.hemenkatilbutton {
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  display: flex;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: center;
+  outline: none;
+  left: 0%;
+  bottom: 0;
+  min-width: 345px;
+  height: 56px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-bottom: 10px;
+  position: fixed;
+}
